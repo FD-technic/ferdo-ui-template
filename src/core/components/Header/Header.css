@@ -1,0 +1,46 @@
+/* === Header Footer === */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: var(--header-height);
+    padding: 0 1rem;
+    box-shadow: var(--shadow);
+}
+
+.header-actions {
+    display: flex;
+    align-items: stretch;
+    gap: 0.1rem;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+
+    .header,
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    .header-actions {
+        flex-direction: row;
+        align-items: center;
+        gap: var(--space-5);
+    }
+
+    .nav {
+        width: auto;
+        justify-content: flex-end;
+    }
+
+}

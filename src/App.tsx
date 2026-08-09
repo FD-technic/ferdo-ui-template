@@ -1,27 +1,44 @@
-import { Route, Routes } from "react-router-dom";
-import Header from "./layouts/Header";
-import Footer from "./layouts/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import NotFound from "./pages/NotFound";
-import Service from "./pages/Service";
+import { useEffect, useState } from "react";
+
+import { Footer, Header } from "@core/components";
+import { AppRoutes } from "@web/routes/AppRoutes";
+
+import { adminRoutes } from "@web/content/adminRoutes";
+import { publicRoutes } from "@web/content/publicRoutes";
+
+import { themeService } from "@core/types/ThemeStorage";
+import { useTheme } from "@core/hooks/useTheme";
 
 function App() {
-  return (    
-      <div className="page">
-      <Header />
+  const { theme, setTheme } = useTheme();
+  const [isAuthorized, setIsAuthorized] = useState(false);
+
+  useEffect(() => {
+    themeService.apply(theme);
+  }, [theme]);
+
+  const handleSwitchChange = (checked: boolean) => {
+    setTheme(checked
+      ? "dark"
+      : "light");
+  };
+
+  return (
+    <div className="page">
+      <Header
+        menu={isAuthorized ? adminRoutes : publicRoutes}
+        isChecked={theme === "dark"}
+        onChange={handleSwitchChange}
+        authorized={isAuthorized}
+        onAuthorizedCahange={setIsAuthorized}
+      />
+
       <main>
-        <div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/service" element={<Service />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
+        <AppRoutes />
       </main>
+
       <Footer />
-      </div>    
+    </div>
   );
 }
 

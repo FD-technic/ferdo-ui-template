@@ -1,0 +1,3 @@
+// Hero
+
+export { Hero } from "./Hero"

@@ -1,0 +1,8 @@
+.section {
+    padding-block: var(--space-4);
+    
+}
+
+.section.top {
+    justify-content: start;
+}

@@ -1,0 +1,17 @@
+.switch {
+    transition:
+        transform .25s ease,
+    background-color .25s ease;
+    background-color: rgb(7, 103, 141);
+}
+.switch.checked {
+    background-color: rgb(33, 113, 218);
+}
+
+.switch::before {
+    content: "🌙";
+}
+
+.switch.checked::before {
+    content: "☀️";
+}   

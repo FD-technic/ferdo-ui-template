@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../../assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../assets/fonts/inter/Inter-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../../assets/fonts/jetBrains/JetBrainsMono-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../../assets/fonts/jetBrains/JetBrainsMono-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../../assets/fonts/manrope/Manrope-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+body {
+    font-size: 1.25rem;
+}
+
+:root {
+  /* Typography */
+
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 800;
+
+  --sans: system-ui, sans-serif;
+  --heading: system-ui, sans-serif;
+  --mono: system-ui, sans-serif;
+
+  /* Font size */
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 3rem;
+
+  /* Line height */
+
+  --line-tight: 1.1;
+  --line-normal: 1.5;
+  --line-loose: 1.8;
+
+  /* Letter spacing */
+
+  --tracking-tight: -0.03em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.03em;
+}

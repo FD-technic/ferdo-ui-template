@@ -1,0 +1,16 @@
+span {
+    font-weight: 100;
+}
+
+.project-subtitle {
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+
+.shadow {
+    box-shadow: var(--shadow-lg);
+}
+
+.underline {
+    border-bottom: dashed 2px var(--accent);
+}

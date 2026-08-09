@@ -1,0 +1,12 @@
+span {
+    font-weight: 200;
+}
+
+.brand {
+    color: var(--accent);
+}
+
+.brand-secondary {
+    color: var(--primary);
+    font-weight: 400;
+}

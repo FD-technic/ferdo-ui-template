@@ -1,0 +1,40 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    gap: var(--space-7);
+}
+
+.gap {
+    gap: 2em;
+}
+
+.hero-content {
+    gap: 1.5rem;
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2em;
+}
+
+.span {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.radius {
+    border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+
+    .hero {
+        flex-direction: row;
+        align-items: center;
+    }
+
+}

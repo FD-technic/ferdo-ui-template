@@ -1,0 +1,11 @@
+.switch {
+    transition:
+        transform .25s ease,
+        background-color .25s ease;
+    background-color: rgb(89, 94, 153);
+    border-radius: 15px;
+}
+.switch.checked {
+    background-color: rgb(87, 116, 106);
+}
+

@@ -1,0 +1,33 @@
+.contact-card,
+.contact-icon,
+.contact-title {
+    margin: 0;
+    padding: 0;
+}
+
+
+.contact-card {
+    padding: var(--space-2);
+    margin: var(--space-2);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    max-width: 400px;
+    border: solid 1px var(--primary);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    padding: var(--space-3);
+}
+
+.contact-title {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-semibold);
+}
+
+.contact-link {
+    font-size: var(--text-md);
+    font-weight: var(--font-weight-semibold);
+    color: var(--accent);
+}

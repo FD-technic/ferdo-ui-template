@@ -1,0 +1,145 @@
+/* ==========================================================
+   FDweb - Light Slate
+   ========================================================== */
+
+[data-theme="light"] {
+
+  /* Background */
+
+  --background: #F8FAFC;
+  --surface: #FFFFFF;
+  --card: #F1F5F9;
+
+  --border: #E2E8F0;
+
+  /* Primary */
+
+  --primary: #334155;
+  --primary-hover: #1E293B;
+
+  /* Secondary */
+
+  --secondary: #64748B;
+  --secondary-hover: #475569;
+
+  /* Neutral */
+
+  --neutral: #64748B;
+
+  /* Forms */
+
+  --bg-form: #F8FAFC;
+
+  /* Hero gradient */
+
+  --bg-gradient: linear-gradient(
+      180deg,
+      #FFFFFF 0%,
+      #F8FAFC 45%,
+      #EEF4F8 100%
+  );
+
+  /* Accent */
+
+  --accent: #0F766E;
+  --accent-hover: #115E59;
+
+  /* Text */
+
+  --text: #1E293B;
+  --text-light: #FFFFFF;
+
+  /* Status */
+
+  --success: #16A34A;
+  --success-hover: #15803D;
+
+  --warning: #D97706;
+  --warning-hover: #B45309;
+
+  --danger: #DC2626;
+  --danger-hover: #B91C1C;
+
+  /* Effects */
+
+  --modal-blur: rgba(15, 23, 42, .55);
+
+  --shadow:
+      rgba(15,23,42,.06) 0 8px 20px,
+      rgba(15,23,42,.03) 0 2px 6px;
+
+  color-scheme: light;
+}
+
+/* ==========================================================
+   FDweb - Dark Slate
+   ========================================================== */
+
+[data-theme="dark"] {
+
+  /* Background */
+
+  --background: #0F172A;
+  --surface: #162033;
+  --card: #1E293B;
+
+  --border: #334155;
+
+  /* Primary */
+
+  --primary: #E2E8F0;
+  --primary-hover: #FFFFFF;
+
+  /* Secondary */
+
+  --secondary: #94A3B8;
+  --secondary-hover: #CBD5E1;
+
+  /* Neutral */
+
+  --neutral: #CBD5E1;
+
+  /* Forms */
+
+  --bg-form: #243447;
+
+  /* Hero gradient */
+
+  --bg-gradient: linear-gradient(
+      180deg,
+      #1E293B 0%,
+      #162033 45%,
+      #0F172A 100%
+  );
+
+  /* Accent */
+
+  --accent: #14B8A6;
+  --accent-hover: #2DD4BF;
+
+  /* Text */
+
+  --text: #F8FAFC;
+  --text-light: #FFFFFF;
+
+  /* Status */
+
+  --success: #22C55E;
+  --success-hover: #4ADE80;
+
+  --warning: #F59E0B;
+  --warning-hover: #FBBF24;
+
+  --danger: #EF4444;
+  --danger-hover: #F87171;
+
+  /* Effects */
+
+  --modal-blur: rgba(0,0,0,.75);
+
+  --shadow:
+      rgba(0,0,0,.35) 0 10px 25px,
+      rgba(0,0,0,.20) 0 4px 10px;
+
+  color-scheme: dark;
+}
